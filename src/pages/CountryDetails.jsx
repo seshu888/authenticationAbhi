@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom'
 import '../index.css'
 const CountryDetails = () => {
 
   const {state} = useLocation()
-  console.log(state)
+  console.log(state.currencies)
   return (
-    <div className='Country-Details'>
+  state &&  <div className='Country-Details'>
     <table>
       <thead>
      <tr>
@@ -20,7 +20,7 @@ const CountryDetails = () => {
         <tr>
           <td>{state.name.official}</td>
           <td>{state.name.common}</td>
-          <td>{state.currencies.BBD.name} || {state.currencies.BBD.symbol}</td>
+          <td>{}</td>
           <td>{state.flag} </td>
         </tr>
       </tbody>

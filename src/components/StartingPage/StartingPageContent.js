@@ -1,9 +1,8 @@
 import classes from './StartingPageContent.module.css';
-import { AiFillEye } from 'react-icons/ai';
 import { useState, useEffect, useContext } from 'react';
 import AuthContext from '../../store/auth-context';
 import Popup from '../popup/Popup';
-import { Navigate, useNavigate ,Link} from 'react-router-dom';
+import {  useNavigate ,Link} from 'react-router-dom';
 
 const StartingPageContent = () => {
 	const [ countryData, setCountryData ] = useState(null);
@@ -23,9 +22,6 @@ const StartingPageContent = () => {
 
 	const handleClose=()=>{
 		setItemClicked(null)
-	}
-	const handelAction=()=>{
-		
 	}
 	console.log(countryData && countryData);
 	return (
