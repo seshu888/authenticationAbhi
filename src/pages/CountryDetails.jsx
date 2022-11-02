@@ -12,7 +12,6 @@ const CountryDetails = () => {
      <tr>
           <th>Official Name</th>
           <th>Common</th>
-          <th>Currencies</th>
           <th>Flag</th>
         </tr>
       </thead>
@@ -20,7 +19,6 @@ const CountryDetails = () => {
         <tr>
           <td>{state.name.official}</td>
           <td>{state.name.common}</td>
-          <td>{}</td>
           <td>{state.flag} </td>
         </tr>
       </tbody>
